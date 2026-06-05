@@ -1,0 +1,15 @@
+public class ProductController {  
+        
+        //Field injection  
+        UserRepo repo=Userrepo;
+        public String getUser(username,password){
+              repo.find(username);
+        }
+
+        
+
+
+
+
+
+}
