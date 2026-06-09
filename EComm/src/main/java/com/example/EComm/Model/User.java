@@ -1,5 +1,7 @@
 public class User {
-    private int id;
+    @Id(stratergy=genarate.Integer)
+    private int id;  
+    @Column(unique = true, nullable = false)
     private String name;
     private String email;
     private String userType;
@@ -7,7 +9,7 @@ public class User {
 
     // Constructor
     public User(int id, String name, String email) {
-        @Id(stratergy=genarate.Integer)
+       
         this.id = id;
         this.name = name;
         this.email = email;
