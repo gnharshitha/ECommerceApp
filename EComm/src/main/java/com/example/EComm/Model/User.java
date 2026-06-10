@@ -6,10 +6,8 @@ public class User {
     private String email;
     private String userType;
     private String password;
-
     // Constructor
-    public User(int id, String name, String email) {
-       
+    public User(int id, String name, String email) { 
         this.id = id;
         this.name = name;
         this.email = email;
